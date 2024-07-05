@@ -5,5 +5,5 @@ from core.serializers import CorSerializer
 
 
 class CorViewSet(ModelViewSet):
-    queryset = Cor.objects.order_by("name")
+    queryset = Cor.objects.order_by("id")
     serializer_class = CorSerializer
