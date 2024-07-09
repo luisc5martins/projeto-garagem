@@ -6,7 +6,7 @@ class Marca(models.Model):
     nacionalidade = models.CharField(max_length=50)
 
     def __str__(self):
-        return f"{self.nome} ({self.id}) ({self.nacionalidade})"
+        return f"{self.nome.upper()} ({self.id}) ({self.nacionalidade})"
     
     class Meta:
         verbose_name = "Marca"
