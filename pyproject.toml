@@ -75,3 +75,7 @@ exclude = '''
  | __pypackages__
  )/
 '''
+[[tool.pdm.autoexport]]
+filename = "requirements.txt"
+without-hashes = "true"
+
